@@ -1,0 +1,94 @@
+:root {
+  --lightPurple: #b578ff;
+  --darkPurple: #6674cc;
+  --purplePain: #9615db;
+  --yellow: #f5c32c;
+  --orange: #fca61f;
+  --photo: #4CB256;
+  --video: #4A4EB7;
+  --location: #EF5757;
+  --shedule: #E1AE4A;
+}
+
+/* Light Theme Variables */
+:root,
+[data-theme="light"] {
+  --black: #242d49;
+  --gray: rgba(36, 45, 73, 0.65);
+  --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+  --hrColor: #cfcdcd;
+  --cardColor: rgba(255, 255, 255, 0.64);
+  --buttonBg: linear-gradient(98.63deg, #6674cc 10%, #9615db 100%);
+  --inputColor: rgba(40, 52, 62, 0.07);
+  --background: #f3f3f3;
+  --textColor: #242d49;
+  --cardBorder: rgba(255, 255, 255, 0.2);
+  --hover-bg: rgba(0, 0, 0, 0.05);
+  --border-color: rgba(0, 0, 0, 0.1);
+  --toggle-slider-bg: #fff;
+  --toggle-border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Theme Variables */
+[data-theme="dark"] {
+  --black: #ffffff;
+  --gray: rgba(255, 255, 255, 0.65);
+  --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.5);
+  --hrColor: #444444;
+  --cardColor: rgba(30, 30, 30, 0.9);
+  --buttonBg: linear-gradient(98.63deg, #6674cc 10%, #9615db 100%);
+  --inputColor: rgba(255, 255, 255, 0.1);
+  --background: #1a1a1a;
+  --textColor: #ffffff;
+  --cardBorder: rgba(255, 255, 255, 0.1);
+  --hover-bg: rgba(255, 255, 255, 0.1);
+  --border-color: rgba(255, 255, 255, 0.2);
+  --toggle-slider-bg: #333;
+  --toggle-border-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.App {
+  overflow: hidden;
+  color: var(--textColor);
+  background: var(--background);
+  padding: 1rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.blur{
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #a6ddf0;
+  filter: blur(72px);
+}
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: var(--buttonBg);
+  border: none;
+  border-radius: 0.5rem;
+  transition: all 100ms ease-out;
+}
+
+.button:hover{
+  cursor: pointer;
+  background: transparent;
+  color: var(--purplePain);
+  border: 2px solid var(--purplePain);
+}
+
+
+.button:disabled{
+  background: silver;
+  pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  display: none; 
+}

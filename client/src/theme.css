@@ -1,0 +1,107 @@
+/* Additional Dark Theme Support for Components */
+
+/* Ensure all text elements use theme-aware colors */
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+}
+
+/* Enhanced card styling for better dark theme support */
+[data-theme="dark"] .ProfileCard,
+[data-theme="dark"] .TrendCard,
+[data-theme="dark"] .FollowersCard,
+[data-theme="dark"] .InfoCard,
+[data-theme="dark"] .PostShare,
+[data-theme="dark"] .Post {
+  background-color: var(--cardColor);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Input fields dark theme support */
+[data-theme="dark"] input,
+[data-theme="dark"] textarea {
+  background-color: var(--inputColor);
+  color: var(--textColor);
+  border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+  color: var(--gray);
+}
+
+/* Button hover effects for dark theme */
+[data-theme="dark"] .button:hover {
+  background: transparent;
+  color: var(--lightPurple);
+  border: 2px solid var(--lightPurple);
+}
+
+/* Navigation icons filter for dark theme */
+[data-theme="dark"] .navIcons img {
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
+}
+
+[data-theme="dark"] .navIcons img:hover {
+  filter: brightness(0) invert(0.8);
+}
+
+/* Scrollbar styling for dark theme */
+[data-theme="dark"] ::-webkit-scrollbar {
+  width: 8px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: var(--cardColor);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: var(--gray);
+  border-radius: 4px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: var(--lightPurple);
+}
+
+/* HR elements for dark theme */
+[data-theme="dark"] hr {
+  border-color: var(--hrColor);
+}
+
+/* Modal and overlay support */
+[data-theme="dark"] .modal-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Ensure proper text contrast */
+[data-theme="dark"] .name span,
+[data-theme="dark"] .trend span,
+[data-theme="dark"] .follow span {
+  color: var(--textColor);
+}
+
+/* Search component dark theme */
+[data-theme="dark"] .Search {
+  background-color: var(--inputColor);
+  border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .Search input {
+  color: var(--textColor);
+}
+
+/* Profile images border for dark theme */
+[data-theme="dark"] .ProfileImages img {
+  border: 2px solid var(--border-color);
+}
+
+/* Smooth transitions for theme switching */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}

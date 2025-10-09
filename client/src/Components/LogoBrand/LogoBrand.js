@@ -8,7 +8,7 @@ const LogoBrand = () => {
     <div className='LogoBrand'>
       <Link to='../home' className='logo-container'>
         <img src={Logo} alt="Social Media Logo" />
-        <span className='sm-initials'>SocialMedia</span>
+        <span className='sm-initials'>MadUp</span>
       </Link>
     </div>
   )
